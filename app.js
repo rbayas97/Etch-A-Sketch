@@ -30,9 +30,9 @@ function colorGrid() {
 function clearGrid() {
     const buttonClearGrid = document.querySelector('.btn-2');
     rowDivs = document.querySelectorAll('.row');
-    for (let j = 0; j < rowDivs; j++) {
+    for (let j = 0; j < rowDivs.length; j++) {
         buttonClearGrid.addEventListener('click', () => {
-            rowDivs[k].style.backgroundColor = 'white';
+            rowDivs[j].style.backgroundColor = 'white';
         })
     }
 }
@@ -40,6 +40,9 @@ function clearGrid() {
 function getGridSize() {
     const buttonGridSize = document.querySelector('.btn-1');
     buttonGridSize.addEventListener('click', () => {
+        while (container.firstChild) {
+            container.firstChild.remove();
+        }
         createGrid();
         colorGrid();
         clearGrid();
