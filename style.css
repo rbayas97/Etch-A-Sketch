@@ -12,3 +12,9 @@ body {
     display: flex;
     margin-top: 20px;
 }
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
