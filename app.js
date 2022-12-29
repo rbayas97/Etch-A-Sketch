@@ -16,4 +16,12 @@ function createGrid() {
         }
     }
 }
-createGrid();
+
+function getGridSize() {
+    const buttonGridSize = document.querySelector('btn-1');
+    buttonGridSize.addEventListener('click'), () => {
+        createGrid();
+    }
+}
+
+getGridSize();
