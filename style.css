@@ -13,7 +13,15 @@ body {
     margin-top: 20px;
 }
 
-.column {
+.btn-1 {
+    margin-right: 15px;
+}
+
+.btn-2 {
+    margin-left: 15px;
+}
+
+.column { 
     display: flex;
     flex-direction: column;
     flex: 1;
