@@ -21,18 +21,28 @@ function createGrid() {
 function colorGrid() {
     rowDivs = document.querySelectorAll('.row')
     for (let k = 0; k < rowDivs.length; k++){
-        rowDivs[k].addEventListener("mouseover", () => {
-            rowDivs[k].style.backgroundColor = "black";
+        rowDivs[k].addEventListener('mouseover', () => {
+            rowDivs[k].style.backgroundColor = 'black';
         })
     }
 }
 
+function clearGrid() {
+    const buttonClearGrid = document.querySelector('.btn-2');
+    rowDivs = document.querySelectorAll('.row');
+    for (let j = 0; j < rowDivs; j++) {
+        buttonClearGrid.addEventListener('click', () => {
+            rowDivs[k].style.backgroundColor = 'white';
+        })
+    }
+}
 
 function getGridSize() {
     const buttonGridSize = document.querySelector('.btn-1');
     buttonGridSize.addEventListener('click', () => {
         createGrid();
         colorGrid();
+        clearGrid();
     })
 }
 
