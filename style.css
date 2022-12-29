@@ -4,3 +4,11 @@ body {
     align-items: center;
     background-color: #7fffd4;
 }
+
+.container {
+    width: 680px;
+    height: 680px;
+    background-color: #ffffff;
+    display: flex;
+    margin-top: 20px;
+}
