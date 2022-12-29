@@ -1,4 +1,4 @@
-let container = document.querySelector('container');
+let container = document.querySelector('.container');
 
 function createGrid() {
     let numberGrid = prompt("Enter a number for your grid dimensions. 1-100");
@@ -18,10 +18,10 @@ function createGrid() {
 }
 
 function getGridSize() {
-    const buttonGridSize = document.querySelector('btn-1');
-    buttonGridSize.addEventListener('click'), () => {
+    const buttonGridSize = document.querySelector('.btn-1');
+    buttonGridSize.addEventListener('click', () => {
         createGrid();
-    }
+    })
 }
 
 getGridSize();
