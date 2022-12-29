@@ -17,19 +17,22 @@ function createGrid() {
         }
     }
 }
+
 function colorGrid() {
-    rowDivs = document.querySelectorAll(',row')
-    for (let k = 0; k < rowDivs.lenth; k++){
-        rowDivs[k].addEventListener('mouseover', () => {
-            rowDivs[k].style.backgroundColor = 'black';
+    rowDivs = document.querySelectorAll('.row')
+    for (let k = 0; k < rowDivs.length; k++){
+        rowDivs[k].addEventListener("mouseover", () => {
+            rowDivs[k].style.backgroundColor = "black";
         })
     }
 }
+
 
 function getGridSize() {
     const buttonGridSize = document.querySelector('.btn-1');
     buttonGridSize.addEventListener('click', () => {
         createGrid();
+        colorGrid();
     })
 }
 

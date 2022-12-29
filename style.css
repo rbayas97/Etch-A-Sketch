@@ -16,9 +16,9 @@ body {
 .column {
     display: flex;
     flex-direction: column;
-    flex:1;
+    flex: 1;
 }
 
 .row {
-    flex:1;
+    flex: 1;
 }
